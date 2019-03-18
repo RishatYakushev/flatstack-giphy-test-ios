@@ -1,0 +1,6 @@
+framework module Pods_flatstack_giphy_test_iosUITests {
+  umbrella header "Pods-flatstack-giphy-test-iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08F6FC0448F6748AF8D84A76 /* Pods_flatstack_giphy_test_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006EBD116BC181D37F1AB543 /* Pods_flatstack_giphy_test_ios.framework */; };
+		36939BE02A5C7274F21F29BF /* Pods_flatstack_giphy_test_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDDD53088827066B6E029E0 /* Pods_flatstack_giphy_test_iosUITests.framework */; };
+		95C23D8C95981E83AE476509 /* Pods_flatstack_giphy_test_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264AD5127D116F090A78A467 /* Pods_flatstack_giphy_test_iosTests.framework */; };
+		D2DF19BF223F9EC6003BB5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF19BE223F9EC6003BB5AD /* AppDelegate.swift */; };
+		D2DF19C4223F9EC6003BB5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DF19C2223F9EC6003BB5AD /* Main.storyboard */; };
+		D2DF19C6223F9EC7003BB5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DF19C5223F9EC7003BB5AD /* Assets.xcassets */; };
+		D2DF19C9223F9EC7003BB5AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DF19C7223F9EC7003BB5AD /* LaunchScreen.storyboard */; };
+		D2DF19D4223F9EC7003BB5AD /* flatstack_giphy_test_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF19D3223F9EC7003BB5AD /* flatstack_giphy_test_iosTests.swift */; };
+		D2DF19DF223F9EC7003BB5AD /* flatstack_giphy_test_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF19DE223F9EC7003BB5AD /* flatstack_giphy_test_iosUITests.swift */; };
+		D2DF19F1223F9F01003BB5AD /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF19EC223F9F01003BB5AD /* GifCell.swift */; };
+		D2DF19F2223F9F01003BB5AD /* GifController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF19ED223F9F01003BB5AD /* GifController.swift */; };
+		D2DF19F3223F9F01003BB5AD /* GifController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DF19EE223F9F01003BB5AD /* GifController.xib */; };
+		D2DF19F4223F9F01003BB5AD /* GifCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DF19EF223F9F01003BB5AD /* GifCell.xib */; };
+		D2DF19F5223F9F01003BB5AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF19F0223F9F01003BB5AD /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2DF19D0223F9EC7003BB5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2DF19B3223F9EC5003BB5AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2DF19BA223F9EC5003BB5AD;
+			remoteInfo = "flatstack-giphy-test-ios";
+		};
+		D2DF19DB223F9EC7003BB5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2DF19B3223F9EC5003BB5AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2DF19BA223F9EC5003BB5AD;
+			remoteInfo = "flatstack-giphy-test-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006EBD116BC181D37F1AB543 /* Pods_flatstack_giphy_test_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flatstack_giphy_test_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		123FD05A4D5CB80CD57084CA /* Pods-flatstack-giphy-test-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flatstack-giphy-test-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-flatstack-giphy-test-iosUITests/Pods-flatstack-giphy-test-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		145084F84CF837D48538D124 /* Pods-flatstack-giphy-test-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flatstack-giphy-test-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-flatstack-giphy-test-iosTests/Pods-flatstack-giphy-test-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		264AD5127D116F090A78A467 /* Pods_flatstack_giphy_test_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flatstack_giphy_test_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BB9F056091D1BFE4ECBF4E /* Pods-flatstack-giphy-test-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flatstack-giphy-test-ios.release.xcconfig"; path = "Target Support Files/Pods-flatstack-giphy-test-ios/Pods-flatstack-giphy-test-ios.release.xcconfig"; sourceTree = "<group>"; };
+		44FDABA8E5401E37AF20F5A6 /* Pods-flatstack-giphy-test-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flatstack-giphy-test-iosTests.release.xcconfig"; path = "Target Support Files/Pods-flatstack-giphy-test-iosTests/Pods-flatstack-giphy-test-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EDDD53088827066B6E029E0 /* Pods_flatstack_giphy_test_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flatstack_giphy_test_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737BFFD0C4247F94E8B4D0D4 /* Pods-flatstack-giphy-test-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flatstack-giphy-test-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-flatstack-giphy-test-iosUITests/Pods-flatstack-giphy-test-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2DF19BB223F9EC5003BB5AD /* flatstack-giphy-test-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flatstack-giphy-test-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DF19BE223F9EC6003BB5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2DF19C3223F9EC6003BB5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2DF19C5223F9EC7003BB5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2DF19C8223F9EC7003BB5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2DF19CA223F9EC7003BB5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DF19CF223F9EC7003BB5AD /* flatstack-giphy-test-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flatstack-giphy-test-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DF19D3223F9EC7003BB5AD /* flatstack_giphy_test_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flatstack_giphy_test_iosTests.swift; sourceTree = "<group>"; };
+		D2DF19D5223F9EC7003BB5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DF19DA223F9EC7003BB5AD /* flatstack-giphy-test-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flatstack-giphy-test-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DF19DE223F9EC7003BB5AD /* flatstack_giphy_test_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flatstack_giphy_test_iosUITests.swift; sourceTree = "<group>"; };
+		D2DF19E0223F9EC7003BB5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DF19EC223F9F01003BB5AD /* GifCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
+		D2DF19ED223F9F01003BB5AD /* GifController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifController.swift; sourceTree = "<group>"; };
+		D2DF19EE223F9F01003BB5AD /* GifController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifController.xib; sourceTree = "<group>"; };
+		D2DF19EF223F9F01003BB5AD /* GifCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GifCell.xib; sourceTree = "<group>"; };
+		D2DF19F0223F9F01003BB5AD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E789286B5931F787B9309DA5 /* Pods-flatstack-giphy-test-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flatstack-giphy-test-ios.debug.xcconfig"; path = "Target Support Files/Pods-flatstack-giphy-test-ios/Pods-flatstack-giphy-test-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2DF19B8223F9EC5003BB5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F6FC0448F6748AF8D84A76 /* Pods_flatstack_giphy_test_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DF19CC223F9EC7003BB5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C23D8C95981E83AE476509 /* Pods_flatstack_giphy_test_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DF19D7223F9EC7003BB5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36939BE02A5C7274F21F29BF /* Pods_flatstack_giphy_test_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0EFD56882C91CDFD967637 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E789286B5931F787B9309DA5 /* Pods-flatstack-giphy-test-ios.debug.xcconfig */,
+				42BB9F056091D1BFE4ECBF4E /* Pods-flatstack-giphy-test-ios.release.xcconfig */,
+				145084F84CF837D48538D124 /* Pods-flatstack-giphy-test-iosTests.debug.xcconfig */,
+				44FDABA8E5401E37AF20F5A6 /* Pods-flatstack-giphy-test-iosTests.release.xcconfig */,
+				737BFFD0C4247F94E8B4D0D4 /* Pods-flatstack-giphy-test-iosUITests.debug.xcconfig */,
+				123FD05A4D5CB80CD57084CA /* Pods-flatstack-giphy-test-iosUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		666A26E24D6E2502F68B78A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006EBD116BC181D37F1AB543 /* Pods_flatstack_giphy_test_ios.framework */,
+				264AD5127D116F090A78A467 /* Pods_flatstack_giphy_test_iosTests.framework */,
+				5EDDD53088827066B6E029E0 /* Pods_flatstack_giphy_test_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2DF19B2223F9EC5003BB5AD = {
+			isa = PBXGroup;
+			children = (
+				D2DF19BD223F9EC6003BB5AD /* flatstack-giphy-test-ios */,
+				D2DF19D2223F9EC7003BB5AD /* flatstack-giphy-test-iosTests */,
+				D2DF19DD223F9EC7003BB5AD /* flatstack-giphy-test-iosUITests */,
+				D2DF19BC223F9EC5003BB5AD /* Products */,
+				0A0EFD56882C91CDFD967637 /* Pods */,
+				666A26E24D6E2502F68B78A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2DF19BC223F9EC5003BB5AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF19BB223F9EC5003BB5AD /* flatstack-giphy-test-ios.app */,
+				D2DF19CF223F9EC7003BB5AD /* flatstack-giphy-test-iosTests.xctest */,
+				D2DF19DA223F9EC7003BB5AD /* flatstack-giphy-test-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2DF19BD223F9EC6003BB5AD /* flatstack-giphy-test-ios */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF19BE223F9EC6003BB5AD /* AppDelegate.swift */,
+				D2DF19F7223FA004003BB5AD /* ViewControllers */,
+				D2DF19F6223F9FFD003BB5AD /* Views */,
+				D2DF19C2223F9EC6003BB5AD /* Main.storyboard */,
+				D2DF19C5223F9EC7003BB5AD /* Assets.xcassets */,
+				D2DF19C7223F9EC7003BB5AD /* LaunchScreen.storyboard */,
+				D2DF19CA223F9EC7003BB5AD /* Info.plist */,
+			);
+			path = "flatstack-giphy-test-ios";
+			sourceTree = "<group>";
+		};
+		D2DF19D2223F9EC7003BB5AD /* flatstack-giphy-test-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF19D3223F9EC7003BB5AD /* flatstack_giphy_test_iosTests.swift */,
+				D2DF19D5223F9EC7003BB5AD /* Info.plist */,
+			);
+			path = "flatstack-giphy-test-iosTests";
+			sourceTree = "<group>";
+		};
+		D2DF19DD223F9EC7003BB5AD /* flatstack-giphy-test-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF19DE223F9EC7003BB5AD /* flatstack_giphy_test_iosUITests.swift */,
+				D2DF19E0223F9EC7003BB5AD /* Info.plist */,
+			);
+			path = "flatstack-giphy-test-iosUITests";
+			sourceTree = "<group>";
+		};
+		D2DF19F6223F9FFD003BB5AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF19EE223F9F01003BB5AD /* GifController.xib */,
+				D2DF19EC223F9F01003BB5AD /* GifCell.swift */,
+				D2DF19EF223F9F01003BB5AD /* GifCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2DF19F7223FA004003BB5AD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF19ED223F9F01003BB5AD /* GifController.swift */,
+				D2DF19F0223F9F01003BB5AD /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2DF19BA223F9EC5003BB5AD /* flatstack-giphy-test-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2DF19E3223F9EC7003BB5AD /* Build configuration list for PBXNativeTarget "flatstack-giphy-test-ios" */;
+			buildPhases = (
+				20A3DECA0BA203200DE9ABC0 /* [CP] Check Pods Manifest.lock */,
+				D2DF19B7223F9EC5003BB5AD /* Sources */,
+				D2DF19B8223F9EC5003BB5AD /* Frameworks */,
+				D2DF19B9223F9EC5003BB5AD /* Resources */,
+				5960AAF184C67B81320074C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "flatstack-giphy-test-ios";
+			productName = "flatstack-giphy-test-ios";
+			productReference = D2DF19BB223F9EC5003BB5AD /* flatstack-giphy-test-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2DF19CE223F9EC7003BB5AD /* flatstack-giphy-test-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2DF19E6223F9EC7003BB5AD /* Build configuration list for PBXNativeTarget "flatstack-giphy-test-iosTests" */;
+			buildPhases = (
+				E896F9D37193C815E98EAB0E /* [CP] Check Pods Manifest.lock */,
+				D2DF19CB223F9EC7003BB5AD /* Sources */,
+				D2DF19CC223F9EC7003BB5AD /* Frameworks */,
+				D2DF19CD223F9EC7003BB5AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2DF19D1223F9EC7003BB5AD /* PBXTargetDependency */,
+			);
+			name = "flatstack-giphy-test-iosTests";
+			productName = "flatstack-giphy-test-iosTests";
+			productReference = D2DF19CF223F9EC7003BB5AD /* flatstack-giphy-test-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2DF19D9223F9EC7003BB5AD /* flatstack-giphy-test-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2DF19E9223F9EC7003BB5AD /* Build configuration list for PBXNativeTarget "flatstack-giphy-test-iosUITests" */;
+			buildPhases = (
+				501BC222CC834C80622BA13B /* [CP] Check Pods Manifest.lock */,
+				D2DF19D6223F9EC7003BB5AD /* Sources */,
+				D2DF19D7223F9EC7003BB5AD /* Frameworks */,
+				D2DF19D8223F9EC7003BB5AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2DF19DC223F9EC7003BB5AD /* PBXTargetDependency */,
+			);
+			name = "flatstack-giphy-test-iosUITests";
+			productName = "flatstack-giphy-test-iosUITests";
+			productReference = D2DF19DA223F9EC7003BB5AD /* flatstack-giphy-test-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2DF19B3223F9EC5003BB5AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ришат Якушев";
+				TargetAttributes = {
+					D2DF19BA223F9EC5003BB5AD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D2DF19CE223F9EC7003BB5AD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D2DF19BA223F9EC5003BB5AD;
+					};
+					D2DF19D9223F9EC7003BB5AD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D2DF19BA223F9EC5003BB5AD;
+					};
+				};
+			};
+			buildConfigurationList = D2DF19B6223F9EC5003BB5AD /* Build configuration list for PBXProject "flatstack-giphy-test-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2DF19B2223F9EC5003BB5AD;
+			productRefGroup = D2DF19BC223F9EC5003BB5AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2DF19BA223F9EC5003BB5AD /* flatstack-giphy-test-ios */,
+				D2DF19CE223F9EC7003BB5AD /* flatstack-giphy-test-iosTests */,
+				D2DF19D9223F9EC7003BB5AD /* flatstack-giphy-test-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2DF19B9223F9EC5003BB5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DF19F4223F9F01003BB5AD /* GifCell.xib in Resources */,
+				D2DF19F3223F9F01003BB5AD /* GifController.xib in Resources */,
+				D2DF19C9223F9EC7003BB5AD /* LaunchScreen.storyboard in Resources */,
+				D2DF19C6223F9EC7003BB5AD /* Assets.xcassets in Resources */,
+				D2DF19C4223F9EC6003BB5AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DF19CD223F9EC7003BB5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DF19D8223F9EC7003BB5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20A3DECA0BA203200DE9ABC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flatstack-giphy-test-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		501BC222CC834C80622BA13B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flatstack-giphy-test-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5960AAF184C67B81320074C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flatstack-giphy-test-ios/Pods-flatstack-giphy-test-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flatstack-giphy-test-ios/Pods-flatstack-giphy-test-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E896F9D37193C815E98EAB0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flatstack-giphy-test-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2DF19B7223F9EC5003BB5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DF19F1223F9F01003BB5AD /* GifCell.swift in Sources */,
+				D2DF19F2223F9F01003BB5AD /* GifController.swift in Sources */,
+				D2DF19F5223F9F01003BB5AD /* ViewController.swift in Sources */,
+				D2DF19BF223F9EC6003BB5AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DF19CB223F9EC7003BB5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DF19D4223F9EC7003BB5AD /* flatstack_giphy_test_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DF19D6223F9EC7003BB5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DF19DF223F9EC7003BB5AD /* flatstack_giphy_test_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2DF19D1223F9EC7003BB5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2DF19BA223F9EC5003BB5AD /* flatstack-giphy-test-ios */;
+			targetProxy = D2DF19D0223F9EC7003BB5AD /* PBXContainerItemProxy */;
+		};
+		D2DF19DC223F9EC7003BB5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2DF19BA223F9EC5003BB5AD /* flatstack-giphy-test-ios */;
+			targetProxy = D2DF19DB223F9EC7003BB5AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2DF19C2223F9EC6003BB5AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2DF19C3223F9EC6003BB5AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2DF19C7223F9EC7003BB5AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2DF19C8223F9EC7003BB5AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2DF19E1223F9EC7003BB5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2DF19E2223F9EC7003BB5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2DF19E4223F9EC7003BB5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E789286B5931F787B9309DA5 /* Pods-flatstack-giphy-test-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y49MTY8CU2;
+				INFOPLIST_FILE = "flatstack-giphy-test-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatstack.flatstack-giphy-test-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2DF19E5223F9EC7003BB5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42BB9F056091D1BFE4ECBF4E /* Pods-flatstack-giphy-test-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y49MTY8CU2;
+				INFOPLIST_FILE = "flatstack-giphy-test-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatstack.flatstack-giphy-test-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2DF19E7223F9EC7003BB5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 145084F84CF837D48538D124 /* Pods-flatstack-giphy-test-iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5N48U2FLN;
+				INFOPLIST_FILE = "flatstack-giphy-test-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatstack.flatstack-giphy-test-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flatstack-giphy-test-ios.app/flatstack-giphy-test-ios";
+			};
+			name = Debug;
+		};
+		D2DF19E8223F9EC7003BB5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44FDABA8E5401E37AF20F5A6 /* Pods-flatstack-giphy-test-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5N48U2FLN;
+				INFOPLIST_FILE = "flatstack-giphy-test-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatstack.flatstack-giphy-test-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flatstack-giphy-test-ios.app/flatstack-giphy-test-ios";
+			};
+			name = Release;
+		};
+		D2DF19EA223F9EC7003BB5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737BFFD0C4247F94E8B4D0D4 /* Pods-flatstack-giphy-test-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5N48U2FLN;
+				INFOPLIST_FILE = "flatstack-giphy-test-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatstack.flatstack-giphy-test-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "flatstack-giphy-test-ios";
+			};
+			name = Debug;
+		};
+		D2DF19EB223F9EC7003BB5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123FD05A4D5CB80CD57084CA /* Pods-flatstack-giphy-test-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5N48U2FLN;
+				INFOPLIST_FILE = "flatstack-giphy-test-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flatstack.flatstack-giphy-test-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "flatstack-giphy-test-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2DF19B6223F9EC5003BB5AD /* Build configuration list for PBXProject "flatstack-giphy-test-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DF19E1223F9EC7003BB5AD /* Debug */,
+				D2DF19E2223F9EC7003BB5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2DF19E3223F9EC7003BB5AD /* Build configuration list for PBXNativeTarget "flatstack-giphy-test-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DF19E4223F9EC7003BB5AD /* Debug */,
+				D2DF19E5223F9EC7003BB5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2DF19E6223F9EC7003BB5AD /* Build configuration list for PBXNativeTarget "flatstack-giphy-test-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DF19E7223F9EC7003BB5AD /* Debug */,
+				D2DF19E8223F9EC7003BB5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2DF19E9223F9EC7003BB5AD /* Build configuration list for PBXNativeTarget "flatstack-giphy-test-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DF19EA223F9EC7003BB5AD /* Debug */,
+				D2DF19EB223F9EC7003BB5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2DF19B3223F9EC5003BB5AD /* Project object */;
+}
